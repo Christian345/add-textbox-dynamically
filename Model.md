@@ -33,6 +33,6 @@ DESCRIPTION:
     
         public short ID_DESCRIPTION { get; set; }
         public string TYPE { get; set; }
-    
+        public Nullable<short> ID_ACTIVITE { get; set; }
         public virtual ACTIVITES_POSTE ACTIVITES_POSTE { get; set; }
      }
