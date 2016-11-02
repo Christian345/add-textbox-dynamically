@@ -34,3 +34,14 @@ Otrnzao ny code any @vue: Description/Create
             });
          });
        </script>
+
+Ity le vue partiel: Activites.aspx
+<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<GPEECMVC3.Models.ACTIVITES_POSTE>" %>
+<%@ Import Namespace="HtmlHelpers.BeginCollectionItem" %>
+
+<div class="editorRow" style="margin-left:180px">
+    <% using (Html.BeginCollectionItem("activites"))
+       { %>
+        <%: Html.TextAreaFor(x => x.ACTIVITE_PRINCIPALES) %><a href="#" class="deleteActivite">Supprimer</a>
+    <% } %>
+</div>
