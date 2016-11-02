@@ -1,6 +1,7 @@
 # add-textbox-dynamically
 add-textbox dynamically in asp.net mvc
 Otranzao le code le code any @contrôleur
+
      // GET: /Description/Create
         public ActionResult Create()
         {
@@ -10,8 +11,8 @@ Otranzao le code le code any @contrôleur
             ViewBag.activite = activite;
             return View();
         }
+      
       // POST: /Description/Create
-
         [HttpPost]
         public ActionResult Create(DESCRIPTION description, IEnumerable<ACTIVITES_POSTE> activites)//null foana le activites eto
         {
