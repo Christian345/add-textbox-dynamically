@@ -28,4 +28,8 @@ Otranzao le code le code any @contrôleur
             }
             return View(description);
         }
-        
+          
+        public ViewResult Activite()
+        {
+            return View("Activite", new ACTIVITES_POSTE());
+        }
